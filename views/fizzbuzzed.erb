@@ -1,0 +1,15 @@
+<section id="main">
+  <h3>
+    <% for i in 1..100 do %>
+    <% if i % @fizz == 0 && i % @buzz == 0 %>
+    <%= 'fizzbuzz ' %>
+    <%  elsif i % @fizz == 0 %>
+    <%= 'fizz ' %>
+    <%  elsif i % @buzz == 0 %>
+    <%= 'buzz ' %>
+    <%  else  %>
+    <%= i.to_s + ' ' %>
+    <%  end  %>
+    <% end %>
+  </h3>
+</section>
